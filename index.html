@@ -8,7 +8,55 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #5e5e5e;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #fff;
+      color: white;
+      padding: 5px;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Photography</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
  <head>
   <style>
@@ -44,7 +92,7 @@
     }
     .bg-7 {
       background-color: #5e5e5e; /* dark gray */
-      color: #000000;
+      color: #ffffff;
     }
     .bg-8 {
       background-color: #5e5e5e; /* dark gray */
@@ -71,20 +119,19 @@
 <body>
 <div class="container-fluid bg-1 text-center">
   <img src="Paige.JPG" class="img-circle" alt="Paige" height=200 width=200>	
-  <h3 class="margin" style="font-size:50px;">Paige Knittel</h3>
+  <h2 class="margin" style="font-size:50px;">Paige Knittel</h2>
 </div>
 
 <div class="container-fluid bg-2 text-center">
-  <h3>Education</h3>
+  <h2>Education</h2>
   <p>University of Michigan<p>
   <p>Major: Mathematics<p>
   <p>Minors: Computer Science and Physics<p>
   <p>GPA: 3.86/4.00<p>
 </div>
 
-
 <div class="container-fluid bg-3 text-center">
-  <h3>Education Experience</h3>
+  <h2>Education Experience</h2>
   <div class="row">
     <div class="col-sm-4">
       <h3>Computer Science</h3>
@@ -113,7 +160,7 @@
 
 
 <div class="container-fluid bg-4 text-center">
-  <h3>Experience</h3>
+  <h2>Experience</h2>
   <p>Teaching Assistant: Physics - Honors Mechanics<p>
   <p>Honors Calculus II Grader<p>
   <p>Private Tutor in STEM Fields<p>
@@ -122,19 +169,19 @@
 </div>
 
 <div class="container-fluid bg-5 text-center">
-  <h3>Extra Curriculars</h3>
+  <h2>Extra Curriculars</h2>
   <p>Camp Kesem Member<p>
   <p>Math Club Member<p>
 </div>
 
 <div class="container-fluid bg-6 text-center">
-  <h3>Interests</h3>
+  <h2>Interests</h2>
   <p>Music: classical and rock<p>
   <p>Athletics: biking, rollerblading, and hiking<p>
 </div>
 
 <div class="container-fluid bg-7 text-center">
-  <h3>Photography</h3>
+  <h2>Photography</h2>
 </div>
 
 <div class="container-fluid bg-8 text-center"> 
