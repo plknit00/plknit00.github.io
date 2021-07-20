@@ -80,7 +80,7 @@ body, html {
     <div class="container-fluid bg-3 text-center">
       <h2>Courses</h2>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="test">
           <h3>Computer Science</h3>
           <p>Practical knowledge of C++, MATLAB, Python, and VPython</p>
           <p>Lab experience with Excel</p>
@@ -88,7 +88,7 @@ body, html {
           <p>Data Structures and Algorithm Course</p>
           <p>Artifical Intelligence Course</p>
         </div>
-        <div class="col-sm-4">
+        <div class="test">
           <h3>Mathematics</h3>
           <p>Honors Calculus II</p>
           <p>Calculus III</p>
@@ -104,7 +104,7 @@ body, html {
           <p>Combinatorics</p>
           <p>Topology</p>
         </div>
-        <div class="col-sm-4">
+        <div class="test">
           <h3>Physics</h3>
           <p>Honors Mechanics with Lab</p>
           <p>Electricity and Magentism with Lab</p>
@@ -223,6 +223,10 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 </script>
+
+.row{ width: 800px; }
+.row .test { width: 200px; display: inline-block; margin: 0 20px; }
+.row .test p { text-align: justify; }
 
 </body>
 </html>
