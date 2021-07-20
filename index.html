@@ -1,230 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Paige Knittel</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #5e5e5e;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #fff;
-      color: white;
-      padding: 5px;
-    }
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-  </style>
-</head>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
- <head>
-  <style>
-    body {
-      font: 20px "Montserrat", sans-serif;
-      line-height: 1.8;
-      color: #000000;
-    }
-  p {font-size: 16px;}
-    .bg-1 {
-      background-color: #bfb9ff; /* purple */
-      color: #000000;   
-    }
-    .bg-2 {
-      background-color: #cbcbcb; /* gray */
-      color: #000000;
-    }
-    .bg-3 {
-      background-color: #ffffff; /* white */
-      color: #000000;
-    }
-    .bg-4 {
-      background-color: #bfb9ff; /* purple */
-      color: #000000;
-    }
-    .bg-5 {
-      background-color: #cbcbcb; /* gray */
-      color: #000000;
-    }
-    .bg-6 {
-      background-color: #ffffff; /* white */
-      color: #000000;
-    }
-    .bg-7 {
-      background-color: #5e5e5e; /* dark gray */
-      color: #ffffff;
-    }
-    .bg-8 {
-      background-color: #5e5e5e; /* dark gray */
-      color: #000000;
-    }
-    .bg-9 {
-      background-color: #5e5e5e; /* dark gray */
-      color: #000000;
-    }
-    .bg-10 {
-      background-color: #000000; /* black */
-      color: #ffffff;
-    }
-  </style>
-  <style>
-  .container-fluid {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
 </style>
-</head>
-
-
 <body>
-<div class="container-fluid bg-1 text-center">
-  <img src="Paige.JPG" class="img-circle" alt="Paige" height=200 width=200>	
-  <h2 class="margin" style="font-size:50px;">Paige Knittel</h2>
-</div>
 
-<div class="container-fluid bg-2 text-center">
-  <h2>Education</h2>
-  <p>University of Michigan, August 2018 - December 2021<p>
-  <p>Major: Mathematics<p>
-  <p>Minors: Computer Science and Physics<p>
-  <p>GPA: 3.77/4.00<p>
-</div>
-
-<div class="container-fluid bg-3 text-center">
-  <h2>Education Experience</h2>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Computer Science</h3>
-      <p>Practical knowledge of C++, MATLAB, Python, and VPython</p>
-      <p>Lab experience with Excel</p>
-      <p>Experience with HTML</p>
-      <p>Data Structures and Algorithm Course</p>
-      <p>Artifical Intelligence Course</p>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
-    <div class="col-sm-4">
-      <h3>Mathematics</h3>
-      <p>Honors Calculus II</p>
-      <p>Calculus III</p>
-      <p>Linear Algebra</p>
-      <p>Probability</p>
-      <p>Differential Equations</p>
-      <p>Discrete Mathematics</p>
-      <p>Abstract Algebra</p>
-      <p>Advanced Calculus</p>
-      <p>Numerical Methods</p>
-      <p>Numerical Linear Algebra</p>
-      <p>Complex Analysis</p>
-      <p>Combinatorics</p>
-      <p>Topology</p>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">EDUCATION</a>
     </div>
-    <div class="col-sm-4">
-      <h3>Physics</h3>
-      <p>Honors Mechanics with Lab</p>
-      <p>Electricity and Magentism with Lab</p>
-      <p>Waves, Heat, and Special Relativity</p>
-      <p>Modern Physics with Lab</p>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">INTERESTS</a>
     </div>
   </div>
 </div>
 
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">PAIGE<br>KNITTEL</span>
+  </div>
+</header>
 
-<div class="container-fluid bg-4 text-center">
-  <h2>Current and Previous Experience</h2>
-  <p>Member of a Research Team in Numerical Methods for Many-body Interactions<p>
-  <p>Teaching Assistant: Physics - Honors Mechanics<p>
-  <p>Honors Calculus II Grader<p>
-  <p>Private Tutor in STEM Fields<p>
-  <p>Michigan Athletics Tutor in STEM Fields<p>
-  <p>Studied Abroad in Grenoble, France<p>
-  <p>Marketing Assistant with Keller Williams Realty<p>
-  <p>Wolverine Cuizine food magazine marketing team member<p>
-  <p>Qdoba Team Member<p>
-  <p>Lifetime Fitness Kid's Academy Member<p>
-</div>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
 
-<div class="container-fluid bg-5 text-center">
-  <h2>Extra Curriculars</h2>
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Math Club Member</h3>
-      <p>Engaging in weekly, stand-alone lectures from mathematics professors</p>
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
     </div>
-    <div class="col-sm-4">
-      <h3>Hiking</h3>
-      <p>Finding the best spots in St. Louis and Ann Arbor for hiking</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Camp Kesem Member</h3>
-      <p>Fundraising and planning events to provide children with parents with cancer free access to Camp Kesem and all of their resources</p>
-    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
   </div>
 </div>
 
-<div class="container-fluid bg-6 text-center">
-  <h2>Interests</h2>
-  <p>Music: classical, jazz, rock, disney and pixar<p>
-  <p>Athletics: biking, rollerblading, field hockey, and hiking<p>
-  <p>Art: photography, painting, drawing, and sewing<p>
-</div>
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
 
-<div class="container-fluid bg-7 text-center">
-  <h2>Photography</h2>
-</div>
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
 
-<div class="container-fluid bg-8 text-center"> 
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="IMG_6692.JPG" alt="Switzerland" width = 80%>
-    </div>
-    <div class="col-sm-4">
-      <img src="IMG_6392.JPG" alt="Sydney Opera House" width = 88%>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="IMG_1173.JPG" alt="Bushes" width = 80%>
-    </div>
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
 </div>
 
-<div class="container-fluid bg-9 text-center"> 
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="IMG_8782.JPG" alt="Switzerland" width = 83%>
-    </div>
-    <div class="col-sm-4">
-      <img src="IMG_6945.JPG" alt="Sydney Opera House" width = 98%>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="IMG_8816.JPG" alt="Bushes" width = 74%>
-    </div>
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
   </div>
 </div>
 
-<div class="container-fluid bg-10 text-center">
-  <h3>Contact Information</h3>
-  <a href="mailto:plknit00@gmail.com" class="btn btn-default btn-lg">Email</a>
-  <a href="https://www.linkedin.com/in/paige-knittel-4bb258195?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8nhfyZhoRqaQyC0tghDW6Q%3D%3D" class="btn btn-default btn-lg">LinkedIn</a>
+<!-- End page content -->
 </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
-
 </html>
