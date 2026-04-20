@@ -31,6 +31,42 @@ ul.myUL {
 .menu {
   display: none;
 }
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 100px auto 0 auto; /* pushes it below navbar */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.card a:hover {
+  opacity: 0.8;
+}
+
 </style>
 <body>
 
@@ -65,106 +101,177 @@ ul.myUL {
 <!-- Experience -->
 <div class="w3-container" id="exp">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">EXPERIENCE</span></h5>
-    <h5><b>Crochet Pattern Generator</b></h5>
-    <p> Takes yarn size and project parameters to generate a crochet pattern for various shapes in C++.</p>
-    <a href='https://github.com/plknit00/crochet_pattern_gen'>Project Files</a>
-    <br>
-    <br>
-    <h5><b>Dynamic Memory Allocator</b></h5>
-    <p> Implemented malloc and free functions for heap memory in C++.</p>
-    <a href='https://github.com/plknit00/malloc-bench'>Project Files</a>
-    <br>
-    <br>
-    <h5><b>Research Through RIT REU</b></h5>
-    <p>Intense summer research program in mathematical modeling of sinus node dysfunction. We based our model on the Barkley model, a reaction-diffusion equation system for excitable media. The project was completed in Matlab. Presented summary of findings at JMM Conference in April 2022.</p>
-    <a href='https://github.com/plknit00/REU'>Project Files</a>
-    <a href='https://docs.google.com/presentation/d/13RCBPujsdrcVRZ18SnedkxDn1VtedbolUtGqmYjao-s/edit?usp=sharing'>Project Presentation</a>
-    <br>
-    <br>
-    <h5><b>Independent Research</b></h5>
-    <p>Conducted a research internship to explore error analysis in the trapezoid method of integration.</p>
-    <a href='https://github.com/Pknittel1/integrals'>Project Files</a>
-    <a href="https://drive.google.com/file/d/1uggbf-jEXLfNTPnkxlIlqQQcVLyW0CrX/view?usp=sharing">Conclusion Paper</a>
-    <br>
-    <br>
-    <h5><b>Remote Minecraft Server Site.</b></h5>
-    <p>Created a website with a group to turn on a Minecraft server.</p>
-    <a href='https://github.com/ClaytonKnittel/pc-landing-page'>Project Files</a>
-    <br>
-    <br>
-    <h5><b>Splitwise Debt Simplifing Algorithm</b></h5>
-    <p>Created my own version of the app Splitwise to simplify expenses within a group.</p>
-    <a href='https://github.com/plknit00/simplify_expenses'>Project Files</a>
-    <br>
-    <br>
-    <h5><b>React and TypeScript Sudoku Game</b></h5>
-    <p>Created a website with a playable sudoku game in React and TypeScript.</p>
-    <a href='https://github.com/plknit00/Sudoku2'>Project Files</a>
-    <br>
-    <br>
-    <h5><b>C++ Sudoku Game</b></h5>
-    <p>Created a terminal playable sudoku game in C++.</p>
-    <a href='https://github.com/plknit00/Sudoku'>Project Files</a>
-    <br>
-    <br>
-    <h5><b>Hash Map</b></h5>
-    <p>Created a class of hashing functions in C++.</p>
-    <a href='https://github.com/plknit00/hash_proj'>Project Files</a>
+    <!-- EXPERIENCE GRID -->
+    <div class="cards-grid">
+      <div class="card">
+        <h3>Jang Syntax Highlighter</h3>
+        <p>Syntax highlighter for language Jang.</p>
+        <a href="https://github.com/plknit00/jang_syntax_highlighter" target="_blank">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Interactive Word Search Game</h3>
+        <p>Interactive word search game and playable site.</p>
+        <a href="https://github.com/plknit00/word_search" target="_blank">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Crochet Generator</h3>
+        <p>Generates crochet patterns based on users' needs for multiple shapes.</p>
+        <a href="https://github.com/plknit00/crochet_pattern_gen" target="_blank">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Malloc Bench</h3>
+        <p>Custom memory allocator in C++.</p>
+        <a href="https://github.com/plknit00/malloc-bench" target="_blank">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>REU Research</h3>
+        <p>Mathematical modeling project.</p>
+        <a href="https://github.com/plknit00/REU" target="_blank">Github</a>
+                <a href="https://docs.google.com/presentation/d/13RCBPujsdrcVRZ18SnedkxDn1VtedbolUtGqmYjao-s/edit?usp=sharing" target="_blank">Presentation</a>
+      </div>
+
+      <div class="card">
+        <h3>Independent Research</h3>
+        <p>Trapezoid integration error analysis.</p>
+        <a href="https://github.com/Pknittel1/integrals" target="_blank">Github</a>
+      </div>
+
+      <div class="card">
+        <h3>Sudoku Projects</h3>
+        <p>C++ Sudoku implementation.</p>
+        <a href="https://github.com/plknit00" target="_blank">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Sudoku Projects</h3>
+        <p>React Sudoku implementation.</p>
+        <a href="https://github.com/plknit00" target="_blank">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Splitwise Debt Simplifing Algorithm</h3>
+        <p>My own version of the app Splitwise to simplify expenses within a group.</p>
+        <a href="https://github.com/plknit00/simplify_expenses" target="_blank">Github</a>
+      </div>
+    </div>
 </div>
 
 <!-- Education Container -->
 <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">EDUCATION</span></h5>
-    <h5>The University of Michigan - Ann Arbor</h5>
+    <h4>Master of Science</h4>
+    <h5>Georgia Institute of Technology - Atlanta, GA</h5>
+    <p>August 2025 - August 2027</p>
+    <p>Mastor in Computer Science</p>
+    <p>Concentration: Computing Systems</p>
+    <p>GPA: 4.0/4.0</p>
+    <br>
+    <h4>Bachelor of Science</h4>
+    <h5>The University of Michigan - Ann Arbor, MI</h5>
     <p>September 2018 - December 2021</p>
     <p>Major: Pure Mathematics</p>
     <p>Minors: Computer Science and Physics</p>
     <p>GPA: 3.8/4.0</p>
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'MATH');" id="myLink">
-        <div class="w3-col s6 tablink">Math</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'CS');">
-        <div class="w3-col s6 tablink">Computer Science</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'PHYS');">
-        <div class="w3-col s6 tablink">Physics</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'EXTRA');">
+    </div>
+        <div class="w3-row w3-center w3-card w3-padding">
+      <div href="javascript:void(0)" onclick="openMenu(event, 'GCS');" id="myLink">
+        <div class="w3-col s6 tablink">Graduate Computer Science</div>
+      </div>
+      <div href="javascript:void(0)" onclick="openMenu(event, 'UCS');">
+        <div class="w3-col s6 tablink">Undergraduate Computer Science</div>
+      </div>
+      <div href="javascript:void(0)" onclick="openMenu(event, 'MISC');">
         <div class="w3-col s6 tablink">Additional Programming</div>
-      </a>
+      </div>
+      <div href="javascript:void(0)" onclick="openMenu(event, 'MP');">
+        <div class="w3-col s6 tablink">Math & Physics</div>
+      </div>
     </div>
 
-    <div id="MATH" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Honors Calculus II</h5>
-      <p class="w3-text-grey">Applied Calculus II with Maple</p><br>
-      <h5>Calculus III</h5>
-      <p class="w3-text-grey">Multivariable and Vector Calculus with MATLAB</p><br>
-      <h5>Linear Algebra</h5>
-      <p class="w3-text-grey">Proof based</p><br>
-      <h5>Discrete Mathematics</h5>
-      <p class="w3-text-grey">Course in the computer science department, proof based</p><br>
-      <h5>Introduction to Probability</h5>
-      <p class="w3-text-grey">Calculus III based</p><br>
-      <h5>Differential Equations</h5>
-      <p class="w3-text-grey">Numerical component in Wolfram Mathematica</p><br>
-      <h5>Introduction to Modern Algebra</h5>
-      <p class="w3-text-grey">Proof based</p><br>
-      <h5>Advanced Calculus</h5>
-      <p class="w3-text-grey">Course in real analysis, proof based</p><br>
-      <h5>Complex Variable</h5>
-      <p class="w3-text-grey">Course in complex analysis, proof based</p><br>
-      <h5>Numerical Linear Algebra</h5>
-      <p class="w3-text-grey">Proof based with MATLAB</p><br>
-      <h5>Introduction to Combinatorics</h5>
-      <p class="w3-text-grey">Proof based</p><br>
-      <h5>Introduction to Topology</h5>
-      <p class="w3-text-grey">Proof based</p><br>
-    </div>
+</div>
 
-    <div id="CS" class="w3-container menu w3-padding-48 w3-card">
+    <div id="GCS" class="w3-container menu w3-padding-48 w3-card">
+      <h5><em>All course files are private</em></h5><br>
+      <h5>Graduate Introduction to Operating Systems</h5>
+      <div class="w3-left-align">
+        <ul>
+          <li>Project 1 - Multithreading</li>
+          <ul>
+            <li>TBD</li>
+          </ul>
+          <li>Project 2 - Proxy</li>
+          <ul>
+            <li>TBD</li>
+          </ul>
+          <li>Project 3 - Distributed File System</li>
+          <ul>
+            <li>tbd</li>
+          </ul>
+        </ul>
+      </div>
+      <br>
+      <h5>Database Systems, Concepts, and Designs</h5>
+      <div class="w3-left-align">
+        <ul>
+          <li>Semester Project</li>
+          <ul>
+            <li>TBD</li>
+          </ul>
+          <ul>
+            <li>Phase 1 - TBD</li>
+            <ul>
+              <li>TBD</li>
+            </ul>
+            <li>Phase 2 - TBD</li>
+            <ul>
+              <li>tbd</li>
+            </ul>
+            <li>Phase 3 - TBD</li>
+            <ul>
+              <li>tbd</li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+      <br>
+      <h5>Introduction to Computer Networks, <em>Python</em></h5>
+      <div class="w3-left-align">
+        <ul>
+          <li>Project 1 - Spanning Tree Protocol</li>
+          <ul>
+            <li>Switching algorithm with least cost path from host node to every other node.</li>
+          </ul>
+          <li>Project 2 - Distance Vector Routing</li>
+          <ul>
+            <li>Creates distance vector for each node (i.e. shortest path from that node to every other node, for each node in the network)</li>
+          </ul>
+          <li>Project 3 - Simulating Networks</li>
+          <ul>
+            <li>tbd</li>
+          </ul>
+          <li>Project 4 - SDN Firewalls</li>
+          <ul>
+            <li>TBD</li>
+          </ul>
+          <li>Project 5 - BGP Hijacking</li>
+          <ul>
+            <li>TBD</li>
+          </ul>
+          <li>Project 6 - BGP Measurements</li>
+          <ul>
+            <li>tbd</li>
+          </ul>
+        </ul>
+      </div>
+      <br>
+    </div> 
+
+    <div id="UCS" class="w3-container menu w3-padding-48 w3-card">
       <h5><em>All course files are private</em></h5><br>
       <h5>Data Structures and Algorithms, <em>C++</em></h5>
       <div class="w3-left-align">
@@ -262,22 +369,7 @@ ul.myUL {
       </div>
     </div>  
 
-    <div id="PHYS" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Honors Mechanics</h5>
-      <p class="w3-text-grey">Modeling in VPython, calculus based</p>
-      <a href='https://www.glowscript.org/#/user/pknittel/folder/Public/program/Racquetball'>Example project of racquetball trajectory</a><br><br><br>
-      <h5>Honors Mechanics Lab</h5><br>
-      <h5>Electricity and Magnetism</h5>
-      <p class="w3-text-grey">Calculus based</p><br>
-      <h5>Electricity and Magnetism Lab</h5><br>
-      <h5>Waves, Heat, and Light</h5>
-      <p class="w3-text-grey">Course in thermodynamics, calculus III based</p><br>
-      <h5>Introduction to Modern Physics</h5><br>
-      <h5>Modern Physics Lab</h5>
-      <p class="w3-text-grey">Excel numerical solving, virtual</p><br>
-    </div> 
-
-    <div id="EXTRA" class="w3-container menu w3-padding-48 w3-card">
+    <div id="MISC" class="w3-container menu w3-padding-48 w3-card">
       <h5>Operating Systems Organizaation</h5>
       <p class="w3-text-grey">Gained hands-on experience working with the Linux operating system kernel, operating systems issues, and applied skills and techniques for profiling, quantifying, and evaluating operating system behaviors.</p>
       <br>
@@ -310,6 +402,45 @@ ul.myUL {
       <h5>Google Data Analytics Certification Program</h5>
       <p class="w3-text-grey">Completed all courses and case study to gain skills in SQL, R, Tableau, spreadsheets, the data lifecycle, and the data analyzation process.</p>
       <!-- add case study --> 
+    </div> 
+
+    <div id="MP" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Honors Calculus II</h5>
+      <p class="w3-text-grey">Applied Calculus II with Maple</p><br>
+      <h5>Calculus III</h5>
+      <p class="w3-text-grey">Multivariable and Vector Calculus with MATLAB</p><br>
+      <h5>Linear Algebra</h5>
+      <p class="w3-text-grey">Proof based</p><br>
+      <h5>Discrete Mathematics</h5>
+      <p class="w3-text-grey">Course in the computer science department, proof based</p><br>
+      <h5>Introduction to Probability</h5>
+      <p class="w3-text-grey">Calculus III based</p><br>
+      <h5>Differential Equations</h5>
+      <p class="w3-text-grey">Numerical component in Wolfram Mathematica</p><br>
+      <h5>Introduction to Modern Algebra</h5>
+      <p class="w3-text-grey">Proof based</p><br>
+      <h5>Advanced Calculus</h5>
+      <p class="w3-text-grey">Course in real analysis, proof based</p><br>
+      <h5>Complex Variable</h5>
+      <p class="w3-text-grey">Course in complex analysis, proof based</p><br>
+      <h5>Numerical Linear Algebra</h5>
+      <p class="w3-text-grey">Proof based with MATLAB</p><br>
+      <h5>Introduction to Combinatorics</h5>
+      <p class="w3-text-grey">Proof based</p><br>
+      <h5>Introduction to Topology</h5>
+      <p class="w3-text-grey">Proof based</p><br>
+      <h5>Honors Mechanics</h5>
+      <p class="w3-text-grey">Modeling in VPython, calculus based</p>
+      <a href='https://www.glowscript.org/#/user/pknittel/folder/Public/program/Racquetball'>Example project of racquetball trajectory</a><br><br><br>
+      <h5>Honors Mechanics Lab</h5><br>
+      <h5>Electricity and Magnetism</h5>
+      <p class="w3-text-grey">Calculus based</p><br>
+      <h5>Electricity and Magnetism Lab</h5><br>
+      <h5>Waves, Heat, and Light</h5>
+      <p class="w3-text-grey">Course in thermodynamics, calculus III based</p><br>
+      <h5>Introduction to Modern Physics</h5><br>
+      <h5>Modern Physics Lab</h5>
+      <p class="w3-text-grey">Excel numerical solving, virtual</p><br>
     </div> 
 
   </div>
