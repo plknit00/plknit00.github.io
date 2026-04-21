@@ -67,6 +67,26 @@ ul.myUL {
   opacity: 0.8;
 }
 
+.menu-bar-narrow {
+  max-width: 600px; /* Adjust this number to your preferred width */
+  margin: 0 auto 20px auto; /* Centered with a little bottom margin */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Ensure the columns inside don't force a weird width */
+.menu-bar-narrow .w3-col {
+  width: auto;
+  padding: 10px 20px;
+}
+
+.menu {
+  display: none;
+  max-width: 600px;
+  margin: auto;
+}
+
 </style>
 <body>
 
@@ -185,12 +205,12 @@ ul.myUL {
 
     </div>
     </div>
-        <div class="w3-row w3-center w3-card w3-padding">
+      <div class="w3-row w3-center w3-card w3-padding menu-bar-narrow"">
       <div href="javascript:void(0)" onclick="openMenu(event, 'GCS');" id="myLink">
         <div class="w3-col s6 tablink">Graduate Computer Science</div>
       </div>
       <div href="javascript:void(0)" onclick="openMenu(event, 'UCS');">
-        <div class="w3-col s6 tablink">Undergraduate Computer Science</div>
+        <div class="w3-col s6 tablink">Undergrad Computer Science</div>
       </div>
       <div href="javascript:void(0)" onclick="openMenu(event, 'MISC');">
         <div class="w3-col s6 tablink">Additional Programming</div>
