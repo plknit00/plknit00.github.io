@@ -227,17 +227,20 @@ ul.myUL {
       <h5>Graduate Introduction to Operating Systems</h5>
       <div class="w3-left-align">
         <ul>
-          <li>Project 1 - Multithreading</li>
+          <li>Project 1 - Multithreading, <em>C</em></li>
           <ul>
-            <li>TBD</li>
+            <li>Built a multi-threaded client-server system in C that implements a custom HTTP-like “GetFile” protocol to reliably transfer files over sockets using a scalable boss–worker thread model.</li>
+            <li>Libraries/API used: Posix sockets, threads (pthreads), and mutexes</li>
           </ul>
-          <li>Project 2 - Proxy</li>
+          <li>Project 2 - Inter-Process Communication (IPC), <em>C</em></li>
           <ul>
-            <li>TBD</li>
+            <li>Extended a multi-threaded GetFile server into a proxy that forwards requests to web servers and built a shared-memory cache system using inter-process communication (IPC) to efficiently serve files between proxy and cache processes.</li>
+            <li>Libraries/API used: POSIX socket API, libcurl (HTTP requests), POSIX/System V shared memory, message queues, mutexes, and semaphores</li>
           </ul>
-          <li>Project 3 - Distributed File System</li>
+          <li>Project 3 - gRPC (remote procedure calls) and Distributed File System, <em>C++</em></li>
           <ul>
-            <li>tbd</li>
+            <li>Designed and implemented a distributed file system using gRPC, enabling clients to fetch, store, and synchronize files with a server using Protocol Buffers and a weakly consistent caching model.</li>
+            <li>Libraries/API used: gRPC, Protobuf (protocol buffer)</li>
           </ul>
         </ul>
       </div>
@@ -245,22 +248,22 @@ ul.myUL {
       <h5>Database Systems, Concepts, and Designs</h5>
       <div class="w3-left-align">
         <ul>
-          <li>Semester Project</li>
+          <li>Semester Project, <em>Python Flask</em></li>
           <ul>
-            <li>TBD</li>
+            <li>Designed and implemented a full relational database system from analysis to deployment, including EER modeling, schema design, SQL development, and a functional application with integrated business logic and user interface.</li>
           </ul>
           <ul>
-            <li>Phase 1 - TBD</li>
+            <li>Phase 1</li>
             <ul>
-              <li>TBD</li>
+              <li>Designed a relational database system by creating EER and information flow diagrams, defining data constraints, and developing pseudocode to model system logic and workflows.</li>
             </ul>
-            <li>Phase 2 - TBD</li>
+            <li>Phase 2</li>
             <ul>
-              <li>tbd</li>
+              <li>Designed a relational database schema by mapping EER models to tables, writing SQL create statements, and integrating queries into pseudocode to support system functionality and user interactions.</li>
             </ul>
-            <li>Phase 3 - TBD</li>
+            <li>Phase 3</li>
             <ul>
-              <li>tbd</li>
+              <li>Implemented a full-stack relational database application with a functional user interface, integrating SQL queries, business logic, and data validation to support end-to-end system functionality. </li>
             </ul>
           </ul>
         </ul>
@@ -271,27 +274,27 @@ ul.myUL {
         <ul>
           <li>Project 1 - Spanning Tree Protocol</li>
           <ul>
-            <li>Switching algorithm with least cost path from host node to every other node.</li>
+            <li>Implemented a distributed algorithm to construct a loop-free spanning tree by exchanging messages and updating root, distance, and active links.</li>
           </ul>
           <li>Project 2 - Distance Vector Routing</li>
           <ul>
-            <li>Creates distance vector for each node (i.e. shortest path from that node to every other node, for each node in the network)</li>
+            <li>Implemented a distributed Bellman-Ford routing algorithm in Python to compute shortest paths across weighted network topologies, including handling negative cycles and convergence.</li>
           </ul>
           <li>Project 3 - Simulating Networks</li>
           <ul>
-            <li>tbd</li>
+            <li>Built network simulations in Mininet to model and analyze static, complex, and datacenter topologies, evaluating performance through latency and bandwidth testing.</li>
           </ul>
           <li>Project 4 - SDN Firewalls</li>
           <ul>
-            <li>TBD</li>
+            <li>Developed an SDN firewall using the POX OpenFlow controller to enforce packet-level filtering rules, validated through Mininet simulations and Wireshark analysis.</li>
           </ul>
           <li>Project 5 - BGP Hijacking</li>
           <ul>
-            <li>TBD</li>
+            <li>Simulated BGP hijacking attacks in Mininet by manipulating routing advertisements to reroute traffic, analyzing routing behavior and network vulnerabilities.</li>
           </ul>
           <li>Project 6 - BGP Measurements</li>
           <ul>
-            <li>tbd</li>
+            <li>Analyzed large-scale BGP data using Python and PyBGPStream to study routing growth, path dynamics, and network events such as prefix announcements and withdrawals.</li>
           </ul>
         </ul>
       </div>
